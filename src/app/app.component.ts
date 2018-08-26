@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularWorks';
+  name = 'Alper';
+  surName = '';
+
+  logFullName() {
+    console.log(`Name: $(name), Surname: $(surName)`);
+  }
 }
