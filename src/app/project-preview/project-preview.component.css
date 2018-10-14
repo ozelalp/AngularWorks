@@ -5,3 +5,10 @@
     padding-left: 1pc;
     padding-top: 1pc;
 }
+
+span{
+    color:fuchsia;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
