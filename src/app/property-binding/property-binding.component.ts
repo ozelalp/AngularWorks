@@ -10,9 +10,17 @@ export class PropertyBindingComponent implements OnInit {
   buttonName = 'Disabled';
 
   constructor() {
-    setTimeout( () => {
+    this.setTimer();
+  }
+
+  setTimer() {
+    setTimeout(() => {
+      console.log('====================================');
+      console.log('Enabling...');
       this.allowClick = true;
       this.buttonName = 'Enabled';
+      console.log(`Button Status : ${this.allowClick}`);
+      console.log('====================================');
     }, 3000);
   }
 
@@ -21,9 +29,12 @@ export class PropertyBindingComponent implements OnInit {
 
   writeChangeStatus() {
     console.log('====================================');
-    console.log(`Status : ${this.allowClick}`);
-    console.log('====================================');
+    console.log('Disabling...');
     this.allowClick = false;
     this.buttonName = 'Disabled';
+    console.log(`Button Status : ${this.allowClick}`);
+    console.log('====================================');
+
+    this.setTimer();
   }
 }
