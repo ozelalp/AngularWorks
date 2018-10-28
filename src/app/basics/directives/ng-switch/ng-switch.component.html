@@ -1,0 +1,103 @@
+<!-- <ng-container [ngSwitch]="control.labelAlign">
+    <ng-container *ngSwitchCase="LabelPlacement.None">
+      <div class="value"
+          [style.width.px]="control.layout.width"
+          [attr.title]="value">
+        <ng-container *ngIf="value; then valueTemplate"></ng-container>
+      </div>
+    </ng-container>
+  
+    <ng-container *ngSwitchCase="LabelPlacement.Top">
+      <div class="top-captioned-control">
+        <div class="caption" [attr.title]="caption">
+          <span
+            [ngClass]="control.labelClasses"
+            [ngStyle]="control.labelStyle"
+          >{{caption}}</span>
+        </div>
+        <div class="value"
+            [style.height.px]="control.layout.height - 18"
+            [attr.title]="value">
+          <ng-container *ngIf="value; then valueTemplate"></ng-container>
+        </div>
+      </div>
+    </ng-container>
+  
+    <ng-container *ngSwitchCase="LabelPlacement.Right">
+      <div class="right-captioned-control">
+        <div class="value"
+            [style.width.px]="control.layout.width - (control.labelWidth || defaultLabelWidth)"
+            [attr.title]="value">
+          <ng-container *ngIf="value; then valueTemplate"></ng-container>
+        </div>
+        <div class="caption"
+            [style.width.px]="control.labelWidth || defaultLabelWidth"
+            [attr.title]="caption">
+          <span
+            [ngClass]="control.labelClasses"
+            [ngStyle]="control.labelStyle"
+          >{{caption}}</span>
+        </div>
+      </div>
+    </ng-container>
+  
+    <ng-container *ngSwitchDefault>
+      <div class="caption"
+          [style.width.px]="control.labelWidth || defaultLabelWidth"
+          [attr.title]="caption">
+        <span
+          [ngClass]="control.labelClasses"
+          [ngStyle]="control.labelStyle"
+        >{{caption}}</span>
+      </div>
+      <div class="value"
+          [style.width.px]="control.layout.width - (control.labelWidth || defaultLabelWidth)"
+          [attr.title]="value">
+        <ng-container *ngIf="value; then valueTemplate"></ng-container>
+      </div>
+    </ng-container>
+  </ng-container>
+  
+  <ng-template #valueTemplate>
+    <div [class.action]="!!actionData" (click)="actionClick.emit(actionData)">
+      <ng-container [ngSwitch]="true">
+  
+        <mat-icon *ngSwitchCase="attributeDataType === DataType.Boolean"
+                  class="boolean"
+                  [ngStyle]="control.controlStyle"
+        >{{value === '1' ? 'done' : 'close'}}</mat-icon>
+  
+        <span *ngSwitchCase="attributeDataType === DataType.Date || attributeDataType === DataType.DateTime"
+              class="date"
+              [ngClass]="(control.controlClasses || []).concat(getAlignClass())"
+              [ngStyle]="control.controlStyle"
+        >{{value}}</span>
+  
+        <span *ngSwitchCase="attributeDataType === DataType.AutoNumber ||
+                             attributeDataType === DataType.Integer ||
+                             attributeDataType === DataType.Decimal ||
+                             attributeDataType === DataType.Money"
+              class="numeric"
+              [ngClass]="(control.controlClasses || []).concat(getAlignClass())"
+              [ngStyle]="control.controlStyle"
+              [style.color]="isNegative ? control.negativeColor || '' : ''"
+        >{{value}}</span>
+  
+        <img *ngSwitchCase="attributeDataType === DataType.Image"
+              class="image"
+              [ngStyle]="control.controlStyle"
+              src="{{value}}"
+              title="{{tooltip}}"
+        />
+  
+        <span *ngSwitchDefault
+              class="default"
+              [ngClass]="(control.controlClasses || []).concat(getAlignClass())"
+              [ngStyle]="control.controlStyle"
+              [style.-webkit-line-clamp]="getLineClamp()"
+        >{{value}}</span>
+  
+      </ng-container>
+    </div>
+  </ng-template>
+   -->

@@ -1,0 +1,27 @@
+<ng-container>
+
+  <!-- With first block which renders specified template according to if contition. -->
+  <!-- <ng-container *ngIf="checkBool; then checkTrue else checkFalse"></ng-container>
+  <ng-template #checkTrue>
+    <p>
+      checkBool value is true...
+    </p>
+  </ng-template>
+  <ng-template #checkFalse>
+    <p>checkBool value is false...</p>
+    <p>Please click the button to show it</p>
+  </ng-template> -->
+
+  <!-- Without first block which renders below directly. -->
+    <p *ngIf="checkBool; else checkFalse">
+      checkBool value is true...
+    </p>
+  <ng-template #checkFalse>
+    <p>checkBool value is false...</p>
+    <p>Please click the button to show it</p>
+  </ng-template>
+<!-- End of the Without-->
+  <br>
+
+  <input type="button" (click)="changeCheckBool()" [value]="buttonCap">
+</ng-container>

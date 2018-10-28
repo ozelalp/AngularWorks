@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
+  public inputValue: string;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onInputChange(event: any){
+    this.inputValue = (<HTMLInputElement>event.target).value;
   }
 
 }
