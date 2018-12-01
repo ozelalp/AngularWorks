@@ -7,24 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIfTestComponent implements OnInit {
 
-  public checkBool: boolean = false;
-  public buttonCap: string = "Show Paragraph";
+  public checkBool = false;
+  public buttonCap = 'Hide Paragraph';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  changeCheckBool(){
-    if(this.checkBool){
+  changeCheckBool() {
+    if (this.checkBool) {
       this.checkBool = false;
-      this.buttonCap = "Show Paragraph";
-      }
-    else{
+      this.buttonCap = 'Hide Paragraph';
+      } else {
       this.checkBool = true;
-      this.buttonCap = "Hide Paragraph";
+      this.buttonCap = 'Show Paragraph';
       }
-    
   }
 
 }
