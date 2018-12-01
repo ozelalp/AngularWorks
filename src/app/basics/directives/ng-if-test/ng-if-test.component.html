@@ -13,14 +13,14 @@
   </ng-template> -->
 
   <!-- Without first block which renders below directly. -->
-    <p *ngIf="checkBool; else checkFalse">
-      checkBool value is true...
-    </p>
+  <p *ngIf="checkBool; else checkFalse">
+    checkBool value is true...
+  </p>
   <ng-template #checkFalse>
     <p>checkBool value is false...</p>
     <p>Please click the button to show it</p>
   </ng-template>
-<!-- End of the Without-->
+  <!-- End of the Without-->
   <br>
 
   <input type="button" (click)="changeCheckBool()" [value]="buttonCap">

@@ -10,7 +10,7 @@ import { TwoWayBindingComponent } from './bindings/two-way-binding/two-way-bindi
 import { NgIfTestComponent } from './directives/ng-if-test/ng-if-test.component';
 import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({

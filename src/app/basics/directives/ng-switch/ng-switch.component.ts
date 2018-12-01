@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwitchCondition } from 'src/app/shared/enumTypes';
 
 @Component({
   selector: 'app-ng-switch',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgSwitchComponent implements OnInit {
 
-  public switchCondition
+  public switchConditionEnum = SwitchCondition;
+  public switchCondition: SwitchCondition = SwitchCondition.None;
+  public testCond = 1;
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.switchCondition);
   }
 
 }
