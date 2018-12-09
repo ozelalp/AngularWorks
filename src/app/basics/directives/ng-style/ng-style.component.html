@@ -1,0 +1,21 @@
+<div class="container" [ngStyle]="{'padding': '10px'}">
+  <ul class="list-group">
+    <!-- you can set ngStyle in both ways 
+        [ngStyle]="{'background-color': getAltColor(emp.id)}"
+        [ngStyle]="{backgroundColor: getAltColor(emp.id)}"
+    -->
+
+    <!-- birden fazla active item olabiliyor -->
+    <li *ngFor="let emp of employeeList; let empIndex = index; let firstEmp = first; let lasEmp = last" class="list-group-item"
+      [ngClass]="{'active': firstEmp}" [ngStyle]="{backgroundColor: getAltColor(emp.id), 'color': 'white'}" (click)="setActive($event, emp)"
+      [style.font-size.px]=16>
+      {{getName(emp) }}
+    </li>
+
+    <!-- <li *ngFor="let emp of employeeList; let empIndex = index; let firstEmp = first; let lasEmp = last" class="list-group-item"
+      [ngClass]="{'active': selectedIndex == emp.id}" [ngStyle]="{backgroundColor: getAltColor(emp.id), 'color': 'white'}"
+      (click)="setActiveIndex($event, emp)">{{ getName(emp) }}</li> -->
+
+  </ul>
+
+</div>

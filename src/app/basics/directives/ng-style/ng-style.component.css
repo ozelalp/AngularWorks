@@ -1,0 +1,6 @@
+.list-group-item.active {
+    font-style: italic;
+    font-weight: bold;
+    color: brown !important;
+    background-color: aqua !important;
+}

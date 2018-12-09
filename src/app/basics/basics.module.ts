@@ -11,6 +11,7 @@ import { NgIfTestComponent } from './directives/ng-if-test/ng-if-test.component'
 import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
         EventBindingComponent,
         TwoWayBindingComponent,
         NgIfTestComponent,
-        NgSwitchComponent
+        NgSwitchComponent,
+        NgStyleComponent
     ],
     imports: [
         BrowserModule,
@@ -40,7 +42,8 @@ import { FormsModule } from '@angular/forms';
         EventBindingComponent,
         TwoWayBindingComponent,
         NgIfTestComponent,
-        NgSwitchComponent
+        NgSwitchComponent,
+        NgStyleComponent
     ],
 })
 
