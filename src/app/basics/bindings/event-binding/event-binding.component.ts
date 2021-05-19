@@ -13,7 +13,7 @@ export class EventBindingComponent implements OnInit {
   ngOnInit() {
   }
 
-  onInputChange(event: any){
+  onInputChange(event: Event) {
     this.inputValue = (<HTMLInputElement>event.target).value;
   }
 
