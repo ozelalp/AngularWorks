@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceSampleService } from './services/service-sample.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  constructor(private readonly serSample: ServiceSampleService) {
+  }
+
+  eventHandler(value: string) {
+    // console.log(value);
+    this.serSample.logMessage(value);
+  }
 }

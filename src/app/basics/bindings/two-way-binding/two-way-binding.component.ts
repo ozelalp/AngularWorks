@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayBindingComponent implements OnInit {
 
-  public modelProperty: string = "İsminiz : ";
+  public modelProperty = 'İsminiz : ';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

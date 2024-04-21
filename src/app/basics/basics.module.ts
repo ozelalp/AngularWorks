@@ -12,39 +12,37 @@ import { NgSwitchComponent } from './directives/ng-switch/ng-switch.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
-
+import { InputOutputSampleComponent } from './input-output-sample/input-output-sample.component';
 
 @NgModule({
-    declarations: [
-        ProjectPreviewComponent,
-        ProjectsComponent,
-        AttributeSampleComponent,
-        ClassSampleComponent,
-        StringInterpolationComponent,
-        PropertyBindingComponent,
-        EventBindingComponent,
-        TwoWayBindingComponent,
-        NgIfTestComponent,
-        NgSwitchComponent,
-        NgStyleComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule
-    ],
-    exports: [
-        ProjectPreviewComponent,
-        ProjectsComponent,
-        AttributeSampleComponent,
-        ClassSampleComponent,
-        StringInterpolationComponent,
-        PropertyBindingComponent,
-        EventBindingComponent,
-        TwoWayBindingComponent,
-        NgIfTestComponent,
-        NgSwitchComponent,
-        NgStyleComponent
-    ],
+  declarations: [
+    ProjectPreviewComponent,
+    ProjectsComponent,
+    AttributeSampleComponent,
+    ClassSampleComponent,
+    StringInterpolationComponent,
+    PropertyBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent,
+    NgIfTestComponent,
+    NgSwitchComponent,
+    NgStyleComponent,
+    InputOutputSampleComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
+  exports: [
+    ProjectPreviewComponent,
+    ProjectsComponent,
+    AttributeSampleComponent,
+    ClassSampleComponent,
+    StringInterpolationComponent,
+    PropertyBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent,
+    NgIfTestComponent,
+    NgSwitchComponent,
+    NgStyleComponent,
+    InputOutputSampleComponent,
+  ],
 })
-
-export class BasicsModule { }
+export class BasicsModule {}
